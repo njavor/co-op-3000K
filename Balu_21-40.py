@@ -12,6 +12,11 @@ def Döntőkikapásokszáma(ország):
             hanyszorkapottki+=1
     print (f"{ország} {hanyszorkapottki}-szer/ször/szor kapott ki a döntőben")
 
+def Kinyertakkor(évszám):
+    for vbk in VBk.lista:
+        if (vbk.ev == évszám and vbk.helyezes == 1):
+            print(f"{évszám}-ban/ben {vbk.orszag} nyert!")
+
 print("24) Hányszor kapott ki a döntőben Magyarország?")
 Döntőkikapásokszáma("Magyarország")
 
@@ -29,3 +34,6 @@ Döntőkikapásokszáma("Németország")
 
 print("29) Hányszor kapott ki a döntőben Argentína?")
 Döntőkikapásokszáma("Argentína")
+
+print("30)")
+Kinyertakkor(1994)
