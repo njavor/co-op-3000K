@@ -2,13 +2,16 @@ from main import VBk
 
 def KiNyert(lista, rendezo):
     szotar = {}
+
     for elem in lista:
         if elem.hely == rendezo and elem.helyezes == 1:
             if elem.orszag in szotar.keys():
                 szotar[elem.orszag] +=1
             else:
                 szotar[elem.orszag] = 1
-    print(szotar)
+    for orszag, amount in szotar.items():
+        print("{}: {}".format(orszag, amount))
+    
 
 print("42)	A program olvasson be egy csapat nevet és írja ki, a csapat vb-n elért legjobb helyezését!")
 print("43)	A program olvasson be egy csapat nevet és írja ki, a csapat hányszor nyert vb-t!")
