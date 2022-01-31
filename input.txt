@@ -1,0 +1,330 @@
+1	Anglia	1	1966	Anglia
+2	Németország	2	1966	Anglia
+3	Portugália	3	1966	Anglia
+4	Szovjetunió	4	1966	Anglia
+5	Argentína	5	1966	Anglia
+6	Magyarország	6	1966	Anglia
+7	Uruguay	7	1966	Anglia
+8	Koreai NDK	8	1966	Anglia
+9	Olaszország	9	1966	Anglia
+10	Spanyolország	10	1966	Anglia
+11	Brazília	11	1966	Anglia
+12	Mexikó	12	1966	Anglia
+13	Chile	13	1966	Anglia
+14	Franciaország	13	1966	Anglia
+15	Bulgária	15	1966	Anglia
+16	Svájc	16	1966	Anglia
+17	Argentína	1	1978	Argentína
+18	Hollandia	2	1978	Argentína
+19	Brazília	3	1978	Argentína
+20	Olaszország	4	1978	Argentína
+21	Lengyelország	5	1978	Argentína
+22	Németország	6	1978	Argentína
+23	Ausztria	7	1978	Argentína
+24	Peru	8	1978	Argentína
+25	Tunézia	9	1978	Argentína
+26	Spanyolország	10	1978	Argentína
+27	Skócia	11	1978	Argentína
+28	Franciaország	12	1978	Argentína
+29	Svédország	13	1978	Argentína
+30	Irán	14	1978	Argentína
+31	Magyarország	15	1978	Argentína
+32	Mexikó	16	1978	Argentína
+33	Uruguay	1	1950	Brazília
+34	Brazília	2	1950	Brazília
+35	Svédország	3	1950	Brazília
+36	Spanyolország	4	1950	Brazília
+37	Svájc	6	1950	Brazília
+38	Olaszország	7	1950	Brazília
+39	Anglia	8	1950	Brazília
+40	Jugoszlávia	8	1950	Brazília
+41	Chile	9	1950	Brazília
+42	Egyesült Államok	10	1950	Brazília
+43	Paraguay	11	1950	Brazília
+44	Mexikó	12	1950	Brazília
+45	Bolívia	13	1950	Brazília
+46	Brazília	1	1962	Chile
+47	Csehszlovákia	2	1962	Chile
+48	Chile	3	1962	Chile
+49	Jugoszlávia	4	1962	Chile
+50	Magyarország	5	1962	Chile
+51	Szovjetunió	6	1962	Chile
+52	Németország	7	1962	Chile
+53	Anglia	8	1962	Chile
+54	Olaszország	9	1962	Chile
+55	Argentína	10	1962	Chile
+56	Mexikó	11	1962	Chile
+57	Uruguay	12	1962	Chile
+58	Spanyolország	13	1962	Chile
+59	Kolumbia	14	1962	Chile
+60	Bulgária	15	1962	Chile
+61	Svájc	16	1962	Chile
+62	Brazília	1	1994	Egyesült Államok
+63	Olaszország	2	1994	Egyesült Államok
+64	Svédország	3	1994	Egyesült Államok
+65	Németország	5	1994	Egyesült Államok
+66	Románia	6	1994	Egyesült Államok
+67	Hollandia	7	1994	Egyesült Államok
+68	Spanyolország	8	1994	Egyesült Államok
+69	Nigéria	9	1994	Egyesült Államok
+70	Argentína	10	1994	Egyesült Államok
+71	Belgium	11	1994	Egyesült Államok
+72	Szaúd-Arábia	12	1994	Egyesült Államok
+73	Algéria	13	1994	Egyesült Államok
+74	Mexikó	13	1994	Egyesült Államok
+75	Egyesült Államok	14	1994	Egyesült Államok
+76	Svájc	15	1994	Egyesült Államok
+77	Írország	16	1994	Egyesült Államok
+78	Norvégia	17	1994	Egyesült Államok
+79	Oroszország	18	1994	Egyesült Államok
+80	Kolumbia	19	1994	Egyesült Államok
+81	Koreai Közt	20	1994	Egyesült Államok
+82	Bolívia	21	1994	Egyesült Államok
+83	Kamerun	22	1994	Egyesült Államok
+84	Marokkó	23	1994	Egyesült Államok
+85	Görögország	24	1994	Egyesült Államok
+86	Bulgária	29	1994	Egyesült Államok
+87	Franciaország	1	1998	Franciaország
+88	Olaszország	1	1938	Franciaország
+89	Brazília	2	1998	Franciaország
+90	Magyarország	2	1938	Franciaország
+91	Brazília	3	1938	Franciaország
+92	Horvátország	3	1998	Franciaország
+93	Hollandia	4	1998	Franciaország
+94	Svédország	4	1938	Franciaország
+95	Csehszlovákia	5	1938	Franciaország
+96	Olaszország	5	1998	Franciaország
+97	Argentína	6	1998	Franciaország
+98	Franciaország	6	1938	Franciaország
+99	Németország	7	1998	Franciaország
+100	Svájc	7	1938	Franciaország
+101	Dánia	8	1998	Franciaország
+102	Kuba	8	1938	Franciaország
+103	Anglia	9	1998	Franciaország
+104	Románia	9	1938	Franciaország
+105	Jugoszlávia	10	1998	Franciaország
+106	Németország	10	1938	Franciaország
+107	Lengyelország	11	1938	Franciaország
+108	Románia	11	1998	Franciaország
+109	Nigéria	12	1998	Franciaország
+110	Norvégia	12	1938	Franciaország
+111	Belgium	13	1938	Franciaország
+112	Mexikó	13	1998	Franciaország
+113	Hollandia	14	1938	Franciaország
+114	Paraguay	14	1998	Franciaország
+115	Holland India	15	1938	Franciaország
+116	Norvégia	15	1998	Franciaország
+117	Chile	16	1998	Franciaország
+118	Spanyolország	17	1998	Franciaország
+119	Marokkó	18	1998	Franciaország
+120	Belgium	19	1998	Franciaország
+121	Irán	20	1998	Franciaország
+122	Kolumbia	21	1998	Franciaország
+123	Algéria	22	1998	Franciaország
+124	Jamaica	22	1998	Franciaország
+125	Ausztria	23	1998	Franciaország
+126	Dél-Afrika	24	1998	Franciaország
+127	Kamerun	25	1998	Franciaország
+128	Tunézia	26	1998	Franciaország
+129	Skócia	27	1998	Franciaország
+130	Szaúd-Arábia	28	1998	Franciaország
+131	Koreai Közt	30	1998	Franciaország
+132	Japán	31	1998	Franciaország
+133	Egyesült Államok	32	1998	Franciaország
+134	Brazília	1	2002	Japán-Dél Korea
+135	Németország	2	2002	Japán-Dél Korea
+136	Törökország	3	2002	Japán-Dél Korea
+137	Koreai Közt	4	2002	Japán-Dél Korea
+138	Anglia	5	2002	Japán-Dél Korea
+139	Egyesült Államok	5	2002	Japán-Dél Korea
+140	Spanyolország	5	2002	Japán-Dél Korea
+141	Szenegál	5	2002	Japán-Dél Korea
+142	Belgium	9	2002	Japán-Dél Korea
+143	Dánia	9	2002	Japán-Dél Korea
+144	Írország	9	2002	Japán-Dél Korea
+145	Japán	9	2002	Japán-Dél Korea
+146	Mexikó	9	2002	Japán-Dél Korea
+147	Olaszország	9	2002	Japán-Dél Korea
+148	Paraguay	9	2002	Japán-Dél Korea
+149	Svédország	9	2002	Japán-Dél Korea
+150	Argentína	17	2002	Japán-Dél Korea
+151	Costa Rica	17	2002	Japán-Dél Korea
+152	Dél-Afrika	17	2002	Japán-Dél Korea
+153	Ecuador	17	2002	Japán-Dél Korea
+154	Franciaország	17	2002	Japán-Dél Korea
+155	Horvátország	17	2002	Japán-Dél Korea
+156	Kamerun	17	2002	Japán-Dél Korea
+157	Kína	17	2002	Japán-Dél Korea
+158	Lengyelország	17	2002	Japán-Dél Korea
+159	Nigéria	17	2002	Japán-Dél Korea
+160	Oroszország	17	2002	Japán-Dél Korea
+161	Portugália	17	2002	Japán-Dél Korea
+162	Szaúd-Arábia	17	2002	Japán-Dél Korea
+163	Szlovénia	17	2002	Japán-Dél Korea
+164	Tunézia	17	2002	Japán-Dél Korea
+165	Uruguay	17	2002	Japán-Dél Korea
+166	Argentína	1	1986	Mexikó
+167	Brazília	1	1970	Mexikó
+168	Németország	2	1986	Mexikó
+169	Olaszország	2	1970	Mexikó
+170	Franciaország	3	1986	Mexikó
+171	Németország	3	1970	Mexikó
+172	Belgium	4	1986	Mexikó
+173	Uruguay	4	1970	Mexikó
+174	Brazília	5	1986	Mexikó
+175	Szovjetunió	5	1970	Mexikó
+176	Mexikó	6	1970	Mexikó
+177	Mexikó	6	1986	Mexikó
+178	Peru	7	1970	Mexikó
+179	Spanyolország	7	1986	Mexikó
+180	Anglia	8	1970	Mexikó
+181	Anglia	8	1986	Mexikó
+182	Dánia	9	1986	Mexikó
+183	Svédország	9	1970	Mexikó
+184	Belgium	10	1970	Mexikó
+185	Románia	10	1970	Mexikó
+186	Szovjetunió	10	1986	Mexikó
+187	Marokkó	11	1986	Mexikó
+188	Izrael	12	1970	Mexikó
+189	Olaszország	12	1986	Mexikó
+190	Bulgária	13	1970	Mexikó
+191	Paraguay	13	1986	Mexikó
+192	Lengyelország	14	1986	Mexikó
+193	Marokkó	14	1970	Mexikó
+194	Bulgária	15	1986	Mexikó
+195	Csehszlovákia	15	1970	Mexikó
+196	Salvador	16	1970	Mexikó
+197	Uruguay	16	1986	Mexikó
+198	Portugália	17	1986	Mexikó
+199	Magyarország	18	1986	Mexikó
+200	Skócia	19	1986	Mexikó
+201	Koreai Közt	20	1986	Mexikó
+202	Peru	20	1986	Mexikó
+203	Észak-Írország	21	1986	Mexikó
+204	Irak	23	1986	Mexikó
+205	Kanada	24	1986	Mexikó
+206	Németország	1	1974	Németország
+207	Hollandia	2	1974	Németország
+208	Lengyelország	3	1974	Németország
+209	Brazília	4	1974	Németország
+210	Svédország	5	1974	Németország
+211	Német DK	6	1974	Németország
+212	Jugoszlávia	7	1974	Németország
+213	Argentína	8	1974	Németország
+214	Skócia	9	1974	Németország
+215	Olaszország	10	1974	Németország
+216	Chile	11	1974	Németország
+217	Bulgária	12	1974	Németország
+218	Uruguay	13	1974	Németország
+219	Ausztrália	14	1974	Németország
+220	Haiti	15	1974	Németország
+221	Zaire	16	1974	Németország
+222	Németország	1	1990	Olaszország
+223	Olaszország	1	1934	Olaszország
+224	Argentína	2	1990	Olaszország
+225	Csehszlovákia	2	1934	Olaszország
+226	Németország	3	1934	Olaszország
+227	Olaszország	3	1990	Olaszország
+228	Anglia	4	1990	Olaszország
+229	Ausztria	4	1934	Olaszország
+230	Bulgária	4	1990	Olaszország
+231	Jugoszlávia	5	1990	Olaszország
+232	Spanyolország	5	1934	Olaszország
+233	Csehszlovákia	6	1990	Olaszország
+234	Magyarország	6	1934	Olaszország
+235	Kamerun	7	1990	Olaszország
+236	Svájc	7	1934	Olaszország
+237	Írország	8	1990	Olaszország
+238	Svédország	8	1934	Olaszország
+239	Argentína	9	1934	Olaszország
+240	Brazília	9	1990	Olaszország
+241	Franciaország	9	1934	Olaszország
+242	Hollandia	9	1934	Olaszország
+243	Spanyolország	10	1990	Olaszország
+244	Belgium	11	1990	Olaszország
+245	Románia	12	1934	Olaszország
+246	Románia	12	1990	Olaszország
+247	Costa Rica	13	1990	Olaszország
+248	Egyiptom	13	1934	Olaszország
+249	Brazília	14	1934	Olaszország
+250	Kolumbia	14	1990	Olaszország
+251	Belgium	15	1934	Olaszország
+252	Hollandia	15	1990	Olaszország
+253	Egyesült Államok	16	1934	Olaszország
+254	Uruguay	16	1990	Olaszország
+255	Szovjetunió	17	1990	Olaszország
+256	Ausztria	18	1990	Olaszország
+257	Skócia	18	1990	Olaszország
+258	Egyiptom	20	1990	Olaszország
+259	Svédország	21	1990	Olaszország
+260	Koreai Közt	22	1990	Olaszország
+261	Egyesült Államok	23	1990	Olaszország
+262	Arab Emírségek	24	1990	Olaszország
+263	Olaszország	1	1982	Spanyolország
+264	Németország	2	1982	Spanyolország
+265	Lengyelország	3	1982	Spanyolország
+266	Franciaország	4	1982	Spanyolország
+267	Brazília	5	1982	Spanyolország
+268	Anglia	6	1982	Spanyolország
+269	Szovjetunió	7	1982	Spanyolország
+270	Ausztria	8	1982	Spanyolország
+271	Peru	8	1982	Spanyolország
+272	Észak-Írország	9	1982	Spanyolország
+273	Belgium	10	1982	Spanyolország
+274	Argentína	11	1982	Spanyolország
+275	Spanyolország	12	1982	Spanyolország
+276	Magyarország	14	1982	Spanyolország
+277	Skócia	15	1982	Spanyolország
+278	Jugoszlávia	16	1982	Spanyolország
+279	Kamerun	17	1982	Spanyolország
+280	Honduras	18	1982	Spanyolország
+281	Csehszlovákia	19	1982	Spanyolország
+282	Kuvait	21	1982	Spanyolország
+283	Chile	22	1982	Spanyolország
+284	Új-Zéland	23	1982	Spanyolország
+285	Salvador	24	1982	Spanyolország
+286	Németország	1	1954	Svájc
+287	Magyarország	2	1954	Svájc
+288	Ausztria	3	1954	Svájc
+289	Uruguay	4	1954	Svájc
+290	Svájc	5	1954	Svájc
+291	Brazília	6	1954	Svájc
+292	Anglia	7	1954	Svájc
+293	Jugoszlávia	8	1954	Svájc
+294	Franciaország	9	1954	Svájc
+295	Törökország	10	1954	Svájc
+296	Olaszország	11	1954	Svájc
+297	Belgium	12	1954	Svájc
+298	Mexikó	13	1954	Svájc
+299	Csehszlovákia	14	1954	Svájc
+300	Skócia	15	1954	Svájc
+301	Koreai Közt	16	1954	Svájc
+302	Brazília	1	1958	Svédország
+303	Svédország	2	1958	Svédország
+304	Franciaország	3	1958	Svédország
+305	Németország	4	1958	Svédország
+306	Jugoszlávia	5	1958	Svédország
+307	Wales	5	1958	Svédország
+308	Szovjetunió	6	1958	Svédország
+309	Észak-Írország	7	1958	Svédország
+310	Csehszlovákia	9	1958	Svédország
+311	Magyarország	10	1958	Svédország
+312	Anglia	11	1958	Svédország
+313	Paraguay	12	1958	Svédország
+314	Argentína	13	1958	Svédország
+315	Skócia	14	1958	Svédország
+316	Ausztria	15	1958	Svédország
+317	Mexikó	16	1958	Svédország
+318	Uruguay	1	1930	Uruguay
+319	Argentína	2	1930	Uruguay
+320	Egyesült Államok	3	1930	Uruguay
+321	Jugoszlávia	4	1930	Uruguay
+322	Chile	5	1930	Uruguay
+323	Brazília	6	1930	Uruguay
+324	Franciaország	7	1930	Uruguay
+325	Románia	8	1930	Uruguay
+326	Paraguay	9	1930	Uruguay
+327	Peru	10	1930	Uruguay
+328	Belgium	11	1930	Uruguay
+329	Bolívia	12	1930	Uruguay
+330	Mexikó	13	1930	Uruguay
