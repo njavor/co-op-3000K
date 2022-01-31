@@ -19,6 +19,9 @@
 18)	A program olvasson be egy csapat nevet és írja ki, a csapat hányszor jutott ki a vb-re a fájl által tartalmazott időszakban!
 19)	Melyik csapat nyert 1930-ban?
 20)	Melyik csapat nyert 1940-ben?
+21)	Melyik csapat nyert 1950-ben?
+22)	Melyik csapat nyert 1960-ban?
+23)	Melyik csapat nyert 1970-ben?
 """
 
  # 1-6
@@ -38,6 +41,23 @@ def bajnokok(lista, évek):
     i =0
     while i<len(lista):
         if(lista[i].ev[2]==évek):
-            print(lista[i].orszag, ",", lista[i].ev)
+            print(lista[i].orszag, ", ", lista[i].ev)
 
         i+=1
+
+# 13-18
+
+def vb_szereplések (lista, bekertorszag):
+    számláló=0
+    for elem in lista:
+        if elem.orszag==bekertorszag:
+            számláló+=1
+    
+    print (számláló)
+
+# 19-23
+def nyertes(lista, évek):
+    for elem in lista:
+        if elem.év[2]==évek and helyezés=="1":
+            print (elem.orszag)
+
