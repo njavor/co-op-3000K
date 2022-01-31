@@ -2,7 +2,6 @@ from main import VBk
 
 def KiNyert(lista, rendezo):
     szotar = {}
-
     for elem in lista:
         if elem.hely == rendezo and elem.helyezes == 1:
             if elem.orszag in szotar.keys():
@@ -11,6 +10,13 @@ def KiNyert(lista, rendezo):
                 szotar[elem.orszag] = 1
     for orszag, amount in szotar.items():
         print("{}: {}".format(orszag, amount))
+
+def DobNyert(lista, dobogos):    
+    for elem in lista:
+        if elem.helyezes == 1:
+            nyertes = elem
+        if elem.orszag == dobogos and (elem.helyezes == 1 or elem.helyezes == 2 or elem.helyezes == 3):
+            print(f"{nyertes.orszag} - {elem.ev}")
     
 
 print("42)	A program olvasson be egy csapat nevet és írja ki, a csapat vb-n elért legjobb helyezését!")
@@ -27,8 +33,11 @@ print("48)	Melyik csapatok nyertek az Egyesült Államok rendezett vb-ken? A csa
 KiNyert(VBk.lista, "Egyesült Államok")
 print("49)	A program olvasson be egy ország nevet és írja ki, melyik csapatok nyertek az adott helyszínen! A csapatok neve mellett az évszámot is írja ki!")
 print("50)	Melyik csapat nyerte a vb-t, amikor Magyarország dobogós helyzést ért el? A győzetes csapatok neve mellett az évszámot is írja ki!")
+DobNyert(VBk.lista, "Magyarország")
 print("51)	Melyik csapat nyerte a vb-t, amikor Brazília dobogós helyzést ért el? A győzetes csapatok neve mellett az évszámot is írja ki!")
+DobNyert(VBk.lista, "Brazília")
 print("52)	Melyik csapat nyerte a vb-t, amikor Argentína dobogós helyzést ért el? A győzetes csapatok neve mellett az évszámot is írja ki!")
+DobNyert(VBk.lista, "Argentína")
 print("53)	Kikkel játszott döntőt Magyarország? Az ellenfél csapat neve mellett az évszámot is írja ki!")
 print("54)	Kikkel játszott döntőt Mongólia? Az ellenfél csapat neve mellett az évszámot is írja ki!")
 print("55)	Kikkel játszott döntőt Svájc? Az ellenfél csapat neve mellett az évszámot is írja ki!")
