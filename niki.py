@@ -1,3 +1,4 @@
+from curses import keyname
 from main import VBk
 
 def LegHely(lista, orszag):    
@@ -9,7 +10,6 @@ def LegHely(lista, orszag):
         if elem.orszag == orszag and elem.helyezes < leg:
             leg = elem.helyezes
     print(leg)
-
 def HanyVB(lista, orszag):
     vbcimek = 0
     for elem in lista:
@@ -55,8 +55,27 @@ def Donto(lista, orszag):
                 evek.remove(evek[0])
             i+=1
     else: print("Ez az ország nem játszott döntőt.")
-    
 
+def Tobb(lista, nyertEkellE):
+    tobb = {'Orszag' : 'db'}
+    for elem in lista:
+        if nyertEkellE:
+            if elem.helyezes == 1:
+                if elem.orszag in tobb.keys():
+                    tobb[elem.orszag] +=1
+                else:
+                    tobb[elem.orszag] = 1
+        else:
+            if elem.helyezes == 1: #azért, hogy ne írja adjon hozzá az összes résztvevőnél
+                if elem.hely in tobb.keys():
+                    tobb[elem.hely] +=1
+                else:
+                    tobb[elem.hely] = 1
+    for elem in tobb:
+        
+
+
+"""
 print("42)	A program olvasson be egy csapat nevet és írja ki, a csapat vb-n elért legjobb helyezését!")
 inp = input("Írd be egy ország nevét:  ")
 LegHely(VBk.lista, inp)
@@ -64,7 +83,7 @@ LegHely(VBk.lista, inp)
 print("43)	A program olvasson be egy csapat nevet és írja ki, a csapat hányszor nyert vb-t!")
 inp = input("Írd be egy ország nevét:  ")
 HanyVB(VBk.lista, inp)
-
+"""
 print("44)	Melyik csapatok nyertek az Angiában rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!")
 KiNyert(VBk.lista, "Anglia")
 print("45)	Melyik csapatok nyertek a Magyarországon rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!")
@@ -98,7 +117,9 @@ inp = input("Írd be egy ország nevét:  ")
 Donto(VBk.lista, inp)
 
 print("58)	Melyik csapat nyert többször is vb-t?")
+Tobb(VBk.lista, True)
 print("59)	Melyik országban rendeztek többször is vb-t?")
+Tobb(VBk.lista, False)
 print("60)	Melyik csapat(ok) nyert a legtöbbször vb-t? A csapat neve mellett a vb gyözelmmek számát is írja ki! ")
 print("61)	Melyik ország(ok) rendezett legtöbbször vb-t? A csapat neve mellett a vb-k számát is írja ki! ")
 print("62)	Melyik csapat(ok) kapott ki a legtöbbször a döntőben? A csapat neve mellett a vereségek számát is írja ki!")
