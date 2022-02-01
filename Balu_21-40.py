@@ -25,8 +25,12 @@ def LegkorábbiVB():
             legkorábbi = vbk.ev
     print(legkorábbi)
 
-#def HányszornyertVBt():
-
+def HányszornyertVBt(ország):
+    ennyiszernyert = 0
+    for vbk in VBk.lista:
+        if (vbk.helyezes == 1 and vbk.orszag == ország):
+            ennyiszernyert+=1
+    print(f"{ország} {ennyiszernyert}-szor/szer nyert VB-t")
 
 print("24) Hányszor kapott ki a döntőben Magyarország?")
 Döntőkikapásokszáma("Magyarország")
@@ -52,3 +56,17 @@ Kinyertakkor(1994)
 print("31)")
 LegkorábbiVB()
 
+print("32) Magyarország hányszor nyert vb-t?")
+HányszornyertVBt("Magyarország")
+
+print("33) Anglia hányszor nyert vb-t?")
+HányszornyertVBt("Anglia")
+
+print("34) Chile hányszor nyert vb-t?")
+HányszornyertVBt("Chile")
+
+print("35) Peru hányszor nyert vb-t?")
+HányszornyertVBt("Peru")
+
+print("36) Mongólia hányszor nyert vb-t?")
+HányszornyertVBt("Mongólia")
