@@ -1,5 +1,15 @@
 from main import VBk
 
+def LegHely(lista, orszag):    
+    i = 0
+    while i< len(lista) and not lista[i].orszag == orszag:
+        i+=1
+    leg = lista[i].helyezes
+    for elem in lista:
+        if elem.orszag == orszag and elem.helyezes < leg:
+            leg = elem.helyezes
+    print(leg)
+
 def KiNyert(lista, rendezo):
     szotar = {}
     voltVB = False
@@ -41,6 +51,8 @@ def Donto(lista, orszag):
     
 
 print("42)	A program olvasson be egy csapat nevet és írja ki, a csapat vb-n elért legjobb helyezését!")
+inp = input("Írd be egy ország nevét:  ")
+LegHely(VBk.lista, inp)
 print("43)	A program olvasson be egy csapat nevet és írja ki, a csapat hányszor nyert vb-t!")
 
 print("44)	Melyik csapatok nyertek az Angiában rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!")
