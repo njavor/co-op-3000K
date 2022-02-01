@@ -1,3 +1,4 @@
+from operator import le
 from main import VBk
 
 with open("input.txt","r",encoding="utf8") as f:
@@ -16,6 +17,16 @@ def Kinyertakkor(évszám):
     for vbk in VBk.lista:
         if (vbk.ev == évszám and vbk.helyezes == 1):
             print(f"{évszám}-ban/ben {vbk.orszag} nyert!")
+
+def LegkorábbiVB():
+    legkorábbi = VBk.lista[0].ev
+    for vbk in VBk.lista:
+        if (vbk.ev < legkorábbi):
+            legkorábbi = vbk.ev
+    print(legkorábbi)
+
+#def HányszornyertVBt():
+
 
 print("24) Hányszor kapott ki a döntőben Magyarország?")
 Döntőkikapásokszáma("Magyarország")
@@ -37,3 +48,7 @@ Döntőkikapásokszáma("Argentína")
 
 print("30)")
 Kinyertakkor(1994)
+
+print("31)")
+LegkorábbiVB()
+
