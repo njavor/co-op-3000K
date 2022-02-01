@@ -10,6 +10,13 @@ def LegHely(lista, orszag):
             leg = elem.helyezes
     print(leg)
 
+def HanyVB(lista, orszag):
+    vbcimek = 0
+    for elem in lista:
+        if elem.orszag == orszag and elem.helyezes == 1:
+            vbcimek+=1
+    print(vbcimek)
+
 def KiNyert(lista, rendezo):
     szotar = {}
     voltVB = False
@@ -53,7 +60,10 @@ def Donto(lista, orszag):
 print("42)	A program olvasson be egy csapat nevet és írja ki, a csapat vb-n elért legjobb helyezését!")
 inp = input("Írd be egy ország nevét:  ")
 LegHely(VBk.lista, inp)
+
 print("43)	A program olvasson be egy csapat nevet és írja ki, a csapat hányszor nyert vb-t!")
+inp = input("Írd be egy ország nevét:  ")
+HanyVB(VBk.lista, inp)
 
 print("44)	Melyik csapatok nyertek az Angiában rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!")
 KiNyert(VBk.lista, "Anglia")
