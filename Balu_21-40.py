@@ -32,6 +32,13 @@ def HányszornyertVBt(ország):
             ennyiszernyert+=1
     print(f"{ország} {ennyiszernyert}-szor/szer nyert VB-t")
 
+def Mialegjobbhelyezés(ország):
+    legjobbhely = -1
+    for vbk in VBk.lista:
+        if ((legjobbhely == -1 or legjobbhely > vbk.helyezes) and vbk.orszag == ország):
+            legjobbhely = vbk.helyezes
+    print(f"{legjobbhely}. helyezés volt {ország}-nak/nek eddig a legjobbja" if (not legjobbhely == -1) else f"{ország}-nak/nek nem volt helyezése a VB-n")
+
 print("24) Hányszor kapott ki a döntőben Magyarország?")
 Döntőkikapásokszáma("Magyarország")
 
@@ -70,3 +77,18 @@ HányszornyertVBt("Peru")
 
 print("36) Mongólia hányszor nyert vb-t?")
 HányszornyertVBt("Mongólia")
+
+print("37) Írd ki Magyarország vb-n elért legjobb helyezését!")
+Mialegjobbhelyezés("Magyarország")
+
+print("38) Írd ki Anglia vb-n elért legjobb helyezését!")
+Mialegjobbhelyezés("Anglia")
+
+print("39) Írd ki Chile vb-n elért legjobb helyezését!")
+Mialegjobbhelyezés("Chile")
+
+print("40) Írd ki Peru vb-n elért legjobb helyezését!")
+Mialegjobbhelyezés("Peru")
+
+print("41) Írd ki Mongólia vb-n elért legjobb helyezését!")
+Mialegjobbhelyezés("Mongólia")
