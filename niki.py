@@ -1,4 +1,3 @@
-from curses import keyname
 from main import VBk
 
 def LegHely(lista, orszag):    
@@ -57,21 +56,23 @@ def Donto(lista, orszag):
     else: print("Ez az ország nem játszott döntőt.")
 
 def Tobb(lista, nyertEkellE):
-    tobb = {'Orszag' : 'db'}
+    tobb = {1:[], 2:[]}
     for elem in lista:
         if nyertEkellE:
             if elem.helyezes == 1:
-                if elem.orszag in tobb.keys():
-                    tobb[elem.orszag] +=1
+                if elem.orszag in tobb[1] and elem.orszag not in tobb[2]:
+                    tobb[2] += [elem.orszag]                    
                 else:
-                    tobb[elem.orszag] = 1
+                    tobb[1] += [elem.orszag]
         else:
             if elem.helyezes == 1: #azért, hogy ne írja adjon hozzá az összes résztvevőnél
-                if elem.hely in tobb.keys():
-                    tobb[elem.hely] +=1
+                if elem.hely in tobb[1] and elem.hely not in tobb[2]:
+                    tobb[2] += [elem.hely]
                 else:
-                    tobb[elem.hely] = 1
-    for elem in tobb:
+                    tobb[1] += [elem.hely]
+    for value in tobb[2]:
+        print(value)
+                    
         
 
 
