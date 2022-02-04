@@ -9,6 +9,7 @@ def LegHely(lista, orszag):
         if elem.orszag == orszag and elem.helyezes < leg:
             leg = elem.helyezes
     print(leg)
+
 def HanyVB(lista, orszag):
     vbcimek = 0
     for elem in lista:
@@ -30,8 +31,13 @@ def KiNyert(lista, rendezo):
         print("{}: {}".format(orszag, amount))
     if not voltVB: print("Ebben az országban nem volt VB rendezve")
 
+def Helyszin(lista, input):
+    for elem in lista:
+        if elem.helyezes == 1 and elem.hely == input:
+            print(f"{elem.orszag} - {elem.ev}")
+
 def DobNyert(lista, dobogos):
-    nyertesek = {}    
+    nyertesek = {}
     for elem in lista:
         if elem.helyezes == 1:
             if elem.orszag in nyertesek.keys():
@@ -126,6 +132,8 @@ print("48)	Melyik csapatok nyertek az Egyesült Államok rendezett vb-ken? A csa
 KiNyert(VBk.lista, "Egyesült Államok")
 
 print("49)	A program olvasson be egy ország nevet és írja ki, melyik csapatok nyertek az adott helyszínen! A csapatok neve mellett az évszámot is írja ki!")
+inp = input("Írd be egy ország nevét:  ")
+Helyszin(VBk.lista, inp)
 
 print("50)	Melyik csapat nyerte a vb-t, amikor Magyarország dobogós helyzést ért el? A győzetes csapatok neve mellett az évszámot is írja ki!")
 DobNyert(VBk.lista, "Magyarország")
