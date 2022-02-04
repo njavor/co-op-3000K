@@ -72,11 +72,40 @@ def Tobb(lista, nyertEkellE):
                     tobb[1] += [elem.hely]
     for value in tobb[2]:
         print(value)
-                    
-        
+
+def LegOrsz(lista, filt):
+    stat = {}
+    for elem in lista:
+        if filt(elem):
+            if elem.orszag in stat.keys(): stat[elem.orszag] +=1
+            else: stat[elem.orszag] = 1
+
+    mxV = max(stat.items(), key=lambda x: x[1])
+    keyD = {}
+    for key, value in stat.items():
+        if value == mxV[1]:
+            keyD[key] = value
+    PrintDict(keyD)
+    
+def LegRend(lista, filt):
+    stat = {}
+    for elem in lista:
+        if filt(elem):
+            if elem.hely in stat.keys(): stat[elem.hely] +=1
+            else: stat[elem.hely] = 1
+
+    mxV = max(stat.items(), key=lambda x: x[1])
+    keyD = {}
+    for key, value in stat.items():
+        if value == mxV[1]:
+            keyD[key] = value
+    PrintDict(keyD)
+
+def PrintDict(dict):
+    for k,v in dict.items():
+        print(f"{k}: {v}")
 
 
-"""
 print("42)	A program olvasson be egy csapat nevet és írja ki, a csapat vb-n elért legjobb helyezését!")
 inp = input("Írd be egy ország nevét:  ")
 LegHely(VBk.lista, inp)
@@ -84,7 +113,7 @@ LegHely(VBk.lista, inp)
 print("43)	A program olvasson be egy csapat nevet és írja ki, a csapat hányszor nyert vb-t!")
 inp = input("Írd be egy ország nevét:  ")
 HanyVB(VBk.lista, inp)
-"""
+
 print("44)	Melyik csapatok nyertek az Angiában rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!")
 KiNyert(VBk.lista, "Anglia")
 print("45)	Melyik csapatok nyertek a Magyarországon rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!")
@@ -121,6 +150,12 @@ print("58)	Melyik csapat nyert többször is vb-t?")
 Tobb(VBk.lista, True)
 print("59)	Melyik országban rendeztek többször is vb-t?")
 Tobb(VBk.lista, False)
+
 print("60)	Melyik csapat(ok) nyert a legtöbbször vb-t? A csapat neve mellett a vb gyözelmmek számát is írja ki! ")
+LegOrsz(VBk.lista, lambda x: x.helyezes == 1)
+
 print("61)	Melyik ország(ok) rendezett legtöbbször vb-t? A csapat neve mellett a vb-k számát is írja ki! ")
+LegRend(VBk.lista, lambda x: x.helyezes == 1)
+
 print("62)	Melyik csapat(ok) kapott ki a legtöbbször a döntőben? A csapat neve mellett a vereségek számát is írja ki!")
+LegOrsz(VBk.lista, lambda x: x.helyezes == 2)
