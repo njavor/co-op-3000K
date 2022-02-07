@@ -27,9 +27,8 @@ def KiNyert(lista, rendezo):
             else:
                 szotar[elem.orszag] = 1
                 voltVB = True
-    for orszag, amount in szotar.items():
-        print("{}: {}".format(orszag, amount))
-    if not voltVB: print("Ebben az országban nem volt VB rendezve")
+    if voltVB: PrintDict(szotar)
+    else:print("Ebben az országban nem volt VB rendezve")
 
 def Helyszin(lista, input):
     for elem in lista:
@@ -53,7 +52,7 @@ def Donto(lista, orszag):
         if elem.orszag == orszag and (elem.helyezes == 1 or elem.helyezes == 2):
             evek.append(elem.ev)
     i = 0
-    if not len(evek) == 0: 
+    if not len(evek) == 0:
         while i < len(lista) and not len(evek) == 0:
             if lista[i].ev == evek[0] and not lista[i].orszag == orszag:
                 print(f"{lista[i].orszag} - {evek[0]}")
@@ -64,14 +63,13 @@ def Donto(lista, orszag):
 def Tobb(lista, nyertEkellE):
     tobb = {1:[], 2:[]}
     for elem in lista:
-        if nyertEkellE:
-            if elem.helyezes == 1:
+        if elem.helyezes == 1:
+            if nyertEkellE:
                 if elem.orszag in tobb[1] and elem.orszag not in tobb[2]:
                     tobb[2] += [elem.orszag]                    
                 else:
                     tobb[1] += [elem.orszag]
-        else:
-            if elem.helyezes == 1: #azért, hogy ne írja adjon hozzá az összes résztvevőnél
+            else:
                 if elem.hely in tobb[1] and elem.hely not in tobb[2]:
                     tobb[2] += [elem.hely]
                 else:
@@ -113,12 +111,10 @@ def PrintDict(dict):
 
 
 print("42)	A program olvasson be egy csapat nevet és írja ki, a csapat vb-n elért legjobb helyezését!")
-inp = input("Írd be egy ország nevét:  ")
-LegHely(VBk.lista, inp)
+LegHely(VBk.lista, input("Írd be egy ország nevét:  "))
 
 print("43)	A program olvasson be egy csapat nevet és írja ki, a csapat hányszor nyert vb-t!")
-inp = input("Írd be egy ország nevét:  ")
-HanyVB(VBk.lista, inp)
+HanyVB(VBk.lista, input("Írd be egy ország nevét:  "))
 
 print("44)	Melyik csapatok nyertek az Angiában rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!")
 KiNyert(VBk.lista, "Anglia")
@@ -132,8 +128,7 @@ print("48)	Melyik csapatok nyertek az Egyesült Államok rendezett vb-ken? A csa
 KiNyert(VBk.lista, "Egyesült Államok")
 
 print("49)	A program olvasson be egy ország nevet és írja ki, melyik csapatok nyertek az adott helyszínen! A csapatok neve mellett az évszámot is írja ki!")
-inp = input("Írd be egy ország nevét:  ")
-Helyszin(VBk.lista, inp)
+Helyszin(VBk.lista, input("Írd be egy ország nevét:  "))
 
 print("50)	Melyik csapat nyerte a vb-t, amikor Magyarország dobogós helyzést ért el? A győzetes csapatok neve mellett az évszámot is írja ki!")
 DobNyert(VBk.lista, "Magyarország")
@@ -151,8 +146,7 @@ Donto(VBk.lista, "Svájc")
 print("56)	Kikkel játszott döntőt Barzília? Az ellenfél csapat neve mellett az évszámot is írja ki!")
 Donto(VBk.lista, "Brazília")
 print("57)	A program olvasson be egy ország nevet és írja ki, kikkel játszott döntőt az illető csapat? Az ellenfél csapat neve mellett az évszámot is írja ki!")
-inp = input("Írd be egy ország nevét:  ")
-Donto(VBk.lista, inp)
+Donto(VBk.lista, input("Írd be egy ország nevét:  "))
 
 print("58)	Melyik csapat nyert többször is vb-t?")
 Tobb(VBk.lista, True)
